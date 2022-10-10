@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="navbar navbar-light bg-light navbar-expand-md">
+     <a href="#" class="navbar-brand"><img src="download.jpg" class="container-fluid" height="50px"></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+      <span class="nav-toggler-icon"><i class="fa fa-bars fa-fw"></i></span></button>
+    <div class="navbar-collapse collapse" id="menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="#home" class="nav-link" active>HOME</a></li>
+        <li class="nav-item"><a href="" class="nav-link" active>ABOUT</a></li>
+        <li class="nav-item"><a href="" class="nav-link" active>CONTACT US</a></li>
+        <li class="nav-item"><a href="" class="nav-link"  data-toggle="modal" data-target="#login" active>LOGIN</a></li>
+      </ul>
+    </div>
+    <div class="modal fade" id="login">
+      <div class="modal-dialog">
+          <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="w-100 text-center">LOGIN FORM</h3>
+                      <span class="text-end" data-dismiss="modal" style="cursor:pointer;">X</span>
+                  </div>
+                  <div class="modal-body">
+                      <form action="login.php" method="post">
+                      <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Enter Username" name="email">
+                              <input type="text" class="form-control mt-3" placeholder="Enter Password" name="Password"><br>
+                              <hr>
+                              <button class="btn btn-success w-100">Submit</button>
+                              <p class="text-center">Didn't have an account?<a href=""  data-toggle="modal" data-target="#signup" data-dismiss="modal">SIGN UP</a></p>
+                          </div>    
+                          </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="signup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="w-100 text-center">SIGN UP</h3>
+                        <span class="text-end" data-dismiss="modal" style="cursor:pointer;">X</span>
+                    </div>
+                    <div class="modal-body">
+                        <form action="signup.php" method="post">
+                        <div class="form-group">
+                          <form action="signup.php" method="post">
+                            <span><i class="fa fa-user fa-fw"></i>Name</span><br>
+                            <input type="text" class="form-control" name="uname"><br>
+                            <span><i class="fa fa-envelope fa-fw"></i>Email</span><br>
+                            <input type="text" class="form-control" name="email"><br>
+                            <span><i class="fa fa-phone fa-fw"></i>Mobile Number</span><br>
+                            <input type="text" class="form-control" name="num"><br>
+                            <span><i class="fa fa-key fa-fw"></i>Password</span><br>
+                            <input type="password" class="form-control" name="password"><br>
+                            <input type="submit" class="btn w-100 text-center bg-success " name="submit" class="sub-btn" value="SIGN UP">
+                            <p class="text-center">Already have an account?<a href=""  data-toggle="modal" data-target="#login" data-dismiss="modal">LOGIN</a></p>
+                        </form>
+                            </div>    
+                            </form>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+  </div>
+</body>
+</html>
